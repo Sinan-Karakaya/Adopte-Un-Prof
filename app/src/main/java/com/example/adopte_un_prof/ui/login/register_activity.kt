@@ -2,6 +2,7 @@ package com.example.adopte_un_prof.ui.login
 
 import android.arch.lifecycle.Observer
 import android.arch.lifecycle.ViewModelProvider
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.example.adopte_un_prof.databinding.ActivityRegisterBinding
@@ -21,6 +22,11 @@ class register_activity : AppCompatActivity() {
         val password = binding.password
         val login = binding.login
         val loading = binding.loading
+
+        binding.goToLogin?.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+        }
 
         loginViewModel = ViewModelProvider(this, LoginViewModelFactory())
             .get(LoginViewModel::class.java)

@@ -17,4 +17,8 @@
     <string name="password_confirmation">Confirmation du mot de passe</string>
     <string name="nom_d_utilisateur_register">Nom d\'utilisateur</string>
     <string name="back_to_login">Retour</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>

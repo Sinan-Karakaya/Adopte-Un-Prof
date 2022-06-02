@@ -13,6 +13,7 @@ import android.view.View
 import android.view.inputmethod.EditorInfo
 import android.widget.EditText
 import android.widget.Toast
+import com.example.adopte_un_prof.MainActivity
 import com.example.adopte_un_prof.R
 import com.example.adopte_un_prof.databinding.ActivityLoginBinding
 
@@ -67,7 +68,8 @@ class LoginActivity : AppCompatActivity() {
             setResult(Activity.RESULT_OK)
 
             //TODO: send the user to the main part
-            finish()
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         })
 
         username.afterTextChanged {
